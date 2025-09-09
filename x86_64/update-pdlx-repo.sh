@@ -2,7 +2,7 @@
 set -e
 
 # مسیر مخزن
-REPO_DIR="/home/$USER/repo/x86_64"
+REPO_DIR="/home/$USER/pdlx/x86_64"
 
 REPO_NAME="pdlx"
 

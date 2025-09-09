@@ -1,0 +1,68 @@
+# Maintainer: PdLinuXOS <dev@pdlx.local>
+pkgname=pdlx-base-meta
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="PdLinuXOS base meta-package: minimal but practical defaults for fresh installs"
+arch=(any)
+url="https://example.com/pdlx"
+license=(GPL3)
+
+# NOTE:
+# - This is a META package. It ships no files; it only pulls dependencies.
+# - Adjust the dependency list to match your policy (UEFI vs BIOS, dracut vs mkinitcpio, etc.)
+
+depends=(
+  # --- Core base ---
+  base
+  linux
+  linux-firmware
+
+  # --- Shell & basics ---
+  bash-completion
+  vim
+  less
+  nano
+
+  # --- Networking ---
+  networkmanager
+  openssh
+  curl
+  wget
+
+  # --- Filesystems / Disk tools ---
+  btrfs-progs
+  dosfstools
+  e2fsprogs
+  parted
+  util-linux
+
+  # --- Compression / Archive ---
+  tar
+  gzip
+  xz
+  unzip
+  zip
+
+  # --- Bootloader (adjust if you don’t want to force GRUB) ---
+  grub
+  efibootmgr
+)
+
+optdepends=(
+  # Initramfs generators (choose one in your installer flow)
+  'mkinitcpio: initramfs generation (default on Arch)'
+  'dracut: alternative initramfs generator'
+
+  # Mirror management
+  'reflector: auto-update mirrorlist'
+)
+
+# No sources; meta only.
+# You may add install scriptlets if you want side-effects, but metas typically avoid that.
+source=()
+sha256sums=()
+
+# Empty package() because this meta package ships no files.
+package() {
+  : # no-op
+}
