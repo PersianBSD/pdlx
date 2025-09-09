@@ -8,7 +8,7 @@
 set -euo pipefail
 
 ### ======= Config (SSH-based) =======
-REPO_NAME="pdlx"                          # -> pdlx.db.tar.xz
+REPO_NAME="pdlx-v1"                          # -> pdlx.db.tar.xz
 LOCAL_REPO_DIR="/home/ali/pdlx-v1/x86_64"    # your local binary repo working dir
 
 # SSH remote for the binary repo (must be a clone of this URL in LOCAL_REPO_DIR)

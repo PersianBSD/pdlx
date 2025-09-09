@@ -6,7 +6,7 @@ xdata = pkgtype=pkg
 pkgver = 1.0.0-3
 pkgdesc = PdLinuXOS base meta-package: minimal but practical defaults for fresh installs
 url = https://example.com/pdlx
-builddate = 1757455705
+builddate = 1757456502
 packager = Unknown Packager
 size = 0
 arch = any

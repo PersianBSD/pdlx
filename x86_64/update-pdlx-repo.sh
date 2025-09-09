@@ -2,9 +2,9 @@
 set -e
 
 # مسیر مخزن
-REPO_DIR="/home/$USER/pdlx/x86_64"
+REPO_DIR="/home/$USER/pdlx-v1/x86_64"
 
-REPO_NAME="pdlx"
+REPO_NAME="pdlx-v1"
 
 cd "$REPO_DIR" || { echo "❌ Cannot access $REPO_DIR"; exit 1; }
 
