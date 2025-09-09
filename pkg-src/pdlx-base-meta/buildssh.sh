@@ -9,10 +9,10 @@ set -euo pipefail
 
 ### ======= Config (SSH-based) =======
 REPO_NAME="pdlx"                          # -> pdlx.db.tar.xz
-LOCAL_REPO_DIR="/home/ali/pdlx/x86_64"    # your local binary repo working dir
+LOCAL_REPO_DIR="/home/ali/pdlx-v1/x86_64"    # your local binary repo working dir
 
 # SSH remote for the binary repo (must be a clone of this URL in LOCAL_REPO_DIR)
-REMOTE_GIT_URL="git@github.com:PersianBSD/pdlx.git"
+REMOTE_GIT_URL="git@github.com:PersianBSD/pdlx-v1.git"
 GIT_BRANCH="main"
 
 MAKEPKG_FLAGS=(-s --noconfirm)            # add --cleanbuild if desired
